@@ -1,4 +1,6 @@
 import {
+    aiglass,
+    alarmsystem,
     mobile,
     backend,
     creator,
@@ -6,6 +8,7 @@ import {
     javascript,
     typescript,
     html,
+    clogo,
     css,
     reactjs,
     redux,
@@ -25,6 +28,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    python,
   } from "../assets";
   
   export const navLinks = [
@@ -48,7 +52,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Machine Learning Engineer",
       icon: mobile,
     },
     {
@@ -56,27 +60,27 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Embedded Systems Developer",
       icon: creator,
     },
   ];
   
   const technologies = [
     {
+      name: "Python",
+      icon: python,
+    },
+    {
       name: "JavaScript",
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "C++",
+      icon: clogo,
     },
     {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
     },
     {
       name: "Node JS",
@@ -93,10 +97,6 @@ import {
     {
       name: "git",
       icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
     },
     {
       name: "docker",
@@ -188,67 +188,80 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AI Glass",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a communication device enabling deaf individuals to communicate with non-sign language users using a Raspberry Pi and Machine Learning libraries.",
       tags: [
         {
-          name: "react",
+          name: "react native",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "python",
           color: "green-text-gradient",
+        },
+        {
+          name: "linux",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
         },
         {
           name: "tailwind",
-          color: "pink-text-gradient",
+          color: "green-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: aiglass,
+      source_code_link: "https://github.com/Bensmrz/CEG4912-4913-CapstoneGroup4",
     },
     {
-      name: "Job IT",
+      name: "Alarm System RTS",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Developed a responsive alarm system that detects motion, displays information on a screen and performs security functions, efficiently managing its operations and data using C programming.",
       tags: [
         {
-          name: "react",
+          name: "Embedded C",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "STM32CubeIDE",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "FreeRTOS",
+          color: "orange-text-gradient",
         },
       ],
-      image: jobit,
+      image: alarmsystem,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Fitness Website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Developed a responsive fitness website that offers a variety of fitness services and features, also providing real-time updates on the latest news and trends.",
       tags: [
         {
-          name: "nextjs",
+          name: "javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "react",
           color: "green-text-gradient",
         },
         {
           name: "css",
           color: "pink-text-gradient",
         },
+        {
+          name: "bootstrap",
+          color: "orange-text-gradient",
+        },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Abilaash01/Fitness-Website-Final",
+      live_link: "https://sweet-ganache-d23438.netlify.app",
     },
   ];
   
