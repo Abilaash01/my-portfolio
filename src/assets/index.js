@@ -29,6 +29,10 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import distiller from "./company/distiller.png";
 import sfl from "./company/sfl.png";
+import linkedin from "./company/linkedin.png";
+import twitter from "./company/twitter.png";
+import instagram from "./company/instagram.png";
+import github_logo from "./company/github.png";
 
 import aiglass from "./aiglass.png";
 import alarmsystem from "./alarmsystem.png";
@@ -71,4 +75,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  linkedin,
+  twitter,
+  instagram,
+  github_logo,
 };

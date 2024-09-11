@@ -6,6 +6,7 @@ import { styles } from "../styles"
 import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
+import { linkedin, twitter, instagram, github_logo } from "../assets"
 
 const Contact = () => {
   const formRef = useRef()
@@ -115,6 +116,53 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div className="mt-2 text-white font-medium flex items-center gap-2">
+            <p className="mr-2">Socials:</p>
+            <a
+              href="https://github.com/Abilaash01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={github_logo}
+                className="w-8 h-8"
+                alt="github logo"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abilaash01/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={linkedin}
+                className="w-8 h-8"
+                alt="linkedin logo"
+              />
+            </a>
+            <a
+              href="https://x.com/flowspec_"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={twitter}
+                className="w-8 h-8"
+                alt="twitter logo"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/abilaash_01/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={instagram}
+                className="w-8 h-8"
+                alt="instagram logo"
+              />
+            </a>
+          </div>
         </form>
       </motion.div>
 

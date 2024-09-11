@@ -37,8 +37,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "experience",
+      title: "Experience",
     },
     {
       id: "contact",
@@ -212,6 +212,10 @@ import {
           name: "tailwind",
           color: "green-text-gradient",
         },
+        {
+          name: "machine learning",
+          color: "blue-text-gradient",
+        },
       ],
       image: aiglass,
       source_code_link: "https://github.com/Bensmrz/CEG4912-4913-CapstoneGroup4",
@@ -232,6 +236,10 @@ import {
         {
           name: "FreeRTOS",
           color: "orange-text-gradient",
+        },
+        {
+          name: "Multithreading",
+          color: "pink-text-gradient",
         },
       ],
       image: alarmsystem,
