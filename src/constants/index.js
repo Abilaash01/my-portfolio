@@ -10,6 +10,11 @@ import {
     typescript,
     html,
     clogo,
+    c,
+    numpy,
+    pandas,
+    rust,
+    tf,
     css,
     reactjs,
     redux,
@@ -80,8 +85,24 @@ import {
       icon: clogo,
     },
     {
-      name: "React JS",
-      icon: reactjs,
+      name: "rust",
+      icon: rust,
+    },
+    {
+      name: "c",
+      icon: c,
+    },
+    {
+      name: "tensorflow",
+      icon: tf,
+    },
+    {
+      name: "pandas",
+      icon: pandas,
+    },
+    {
+      name: "numpy",
+      icon: numpy,
     },
     {
       name: "Node JS",
@@ -179,8 +200,16 @@ import {
           color: "pink-text-gradient",
         },
         {
-          name: "microcontroller",
+          name: "pandas",
           color: "orange-text-gradient",
+        },
+        {
+          name: "numpy",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "microcontroller",
+          color: "yellow-text-gradient",
         },
       ],
       image: aiglass,

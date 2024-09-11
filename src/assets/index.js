@@ -22,6 +22,11 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import c from "./tech/C.png";
+import numpy from "./tech/NumPy.png";
+import pandas from "./tech/Pandas.png";
+import rust from "./tech/Rust.png";
+import tf from "./tech/TensorFlow.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -52,6 +57,11 @@ export {
   web,
   github,
   menu,
+  c,
+  numpy,
+  pandas,
+  rust,
+  tf,
   clogo,
   close,
   css,
