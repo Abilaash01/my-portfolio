@@ -1,66 +1,74 @@
-import { useState, useRef } from "react"
-import { motion } from "framer-motion"
-import emailjs from "@emailjs/browser"
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { useInView } from "react-intersection-observer";
 
-import { styles } from "../styles"
-import { EarthCanvas } from "./canvas"
-import { SectionWrapper } from "../hoc"
-import { slideIn } from "../utils/motion"
-import { linkedin, twitter, instagram, github_logo } from "../assets"
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
+import { linkedin, twitter, instagram, github_logo } from "../assets";
 
 const Contact = () => {
-  const formRef = useRef()
+  const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
-  })
-  const [loading, setLoading] = useState(false)
+  });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
 
     setForm({
       ...form,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setLoading(true)
+    e.preventDefault();
+    setLoading(true);
 
-    emailjs.send(
-      'service_7stj0xb',
-      'template_njmlvho',
-      {
-        from_name: form.name,
-        to_name: "Abilaash",
-        from_email: form.email,
-        to_email: "abilaash2001@gmail.com",
-        message: form.message,
-      },
-      'z-ruZqAzrI67szUDt'
-    )
+    emailjs
+      .send(
+        "service_7stj0xb",
+        "template_njmlvho",
+        {
+          from_name: form.name,
+          to_name: "Abilaash",
+          from_email: form.email,
+          to_email: "abilaash2001@gmail.com",
+          message: form.message,
+        },
+        "z-ruZqAzrI67szUDt"
+      )
       .then(
         () => {
-          setLoading(false)
-          alert("Thank you. I will get back to you as soon as possible.")
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
             email: "",
             message: "",
-          })
+          });
         },
         (error) => {
-          setLoading(false)
-          console.error(error)
+          setLoading(false);
+          console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.")
+          alert("Ahh, something went wrong. Please try again.");
         }
-      )
-  }
+      );
+  };
+
+  // Intersection observer for lazy loading EarthCanvas
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Only trigger once when it comes into view
+    threshold: 0.3, // Trigger when 30% of the component is in view
+  });
 
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden">
@@ -123,57 +131,45 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={github_logo}
-                className="w-8 h-8"
-                alt="github logo"
-              />
+              <img src={github_logo} className="w-8 h-8" alt="github logo" />
             </a>
             <a
               href="https://www.linkedin.com/in/abilaash01/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={linkedin}
-                className="w-8 h-8"
-                alt="linkedin logo"
-              />
+              <img src={linkedin} className="w-8 h-8" alt="linkedin logo" />
             </a>
             <a
               href="https://x.com/flowspec_"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={twitter}
-                className="w-8 h-8"
-                alt="twitter logo"
-              />
+              <img src={twitter} className="w-8 h-8" alt="twitter logo" />
             </a>
             <a
               href="https://www.instagram.com/abilaash_01/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={instagram}
-                className="w-8 h-8"
-                alt="instagram logo"
-              />
+              <img src={instagram} className="w-8 h-8" alt="instagram logo" />
             </a>
           </div>
         </form>
       </motion.div>
 
+      {/* Lazy loading EarthCanvas */}
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        {/* EarthCanvas will only render once the section comes into view */}
+        <div ref={ref} style={{ width: "100%", height: "100%" }}>
+          {inView && <EarthCanvas />}
+        </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Contact, "contact")
+export default SectionWrapper(Contact, "contact");
