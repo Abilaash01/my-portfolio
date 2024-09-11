@@ -6,6 +6,7 @@ import {
     backend,
     creator,
     web,
+    fitlife,
     javascript,
     typescript,
     html,
@@ -208,6 +209,10 @@ import {
           color: "blue-text-gradient",
         },
         {
+          name: "tensorflow",
+          color: "pink-text-gradient",
+        },
+        {
           name: "microcontroller",
           color: "yellow-text-gradient",
         },
@@ -291,7 +296,7 @@ import {
           color: "orange-text-gradient",
         },
       ],
-      image: tripguide,
+      image: fitlife,
       source_code_link: "https://github.com/Abilaash01/Fitness-Website-Final",
       live_link: "https://sweet-ganache-d23438.netlify.app",
     },
