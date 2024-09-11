@@ -193,7 +193,7 @@ import {
       tags: [
         {
           name: "react native",
-          color: "blue-text-gradient",
+          color: "green-text-gradient",
         },
         {
           name: "javascript",
@@ -201,7 +201,15 @@ import {
         },
         {
           name: "tailwind",
-          color: "green-text-gradient",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "threejs",
+          color: "pink-text-gradient",
         },
       ],
       image: aiglassapp,
