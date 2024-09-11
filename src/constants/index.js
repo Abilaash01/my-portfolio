@@ -1,5 +1,6 @@
 import {
     aiglass,
+    aiglassapp,
     alarmsystem,
     mobile,
     backend,
@@ -159,33 +160,6 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
   const projects = [
     {
       name: "AI Glass",
@@ -193,16 +167,33 @@ import {
         "Developed a communication device enabling deaf individuals to communicate with non-sign language users using a Raspberry Pi and Machine Learning libraries.",
       tags: [
         {
-          name: "react native",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "python",
+          name: "linux",
           color: "green-text-gradient",
         },
         {
-          name: "linux",
+          name: "machine learning",
           color: "pink-text-gradient",
+        },
+        {
+          name: "microcontroller",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: aiglass,
+      source_code_link: "https://github.com/Bensmrz/CEG4912-4913-CapstoneGroup4",
+    },
+    {
+      name: "AI Glass App",
+      description:
+        "Designed and engineered an app to track user interactions and allow them to connect to the device as well as view past chat logs.",
+      tags: [
+        {
+          name: "react native",
+          color: "blue-text-gradient",
         },
         {
           name: "javascript",
@@ -212,13 +203,9 @@ import {
           name: "tailwind",
           color: "green-text-gradient",
         },
-        {
-          name: "machine learning",
-          color: "blue-text-gradient",
-        },
       ],
-      image: aiglass,
-      source_code_link: "https://github.com/Bensmrz/CEG4912-4913-CapstoneGroup4",
+      image: aiglassapp,
+      source_code_link: "https://github.com/ImCalebP/AiGlassApp",
     },
     {
       name: "Alarm System RTS",
@@ -273,4 +260,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

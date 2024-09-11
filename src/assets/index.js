@@ -35,6 +35,7 @@ import instagram from "./company/instagram.png";
 import github_logo from "./company/github.png";
 
 import aiglass from "./aiglass.png";
+import aiglassapp from "./aiglassapp.png";
 import alarmsystem from "./alarmsystem.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -42,6 +43,7 @@ import tripguide from "./tripguide.png";
 
 export {
   aiglass,
+  aiglassapp,
   alarmsystem,
   logo,
   backend,
