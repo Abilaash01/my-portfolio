@@ -86,6 +86,10 @@ import {
       icon: clogo,
     },
     {
+      name: "rust",
+      icon: rust,
+    },
+    {
       name: "c",
       icon: c,
     },
