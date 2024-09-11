@@ -8,6 +8,17 @@ const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
 
+  const handleClick = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      })
+    }
+    setActive(id)
+    setToggle(false)
+  }
+
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
@@ -33,7 +44,7 @@ const Navbar = () => {
                 ? "text-white"
                 : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => handleClick(link.id)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
@@ -59,10 +70,7 @@ const Navbar = () => {
                     ? "text-white"
                     : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle)
-                    setActive(link.title)
-                  }}
+                  onClick={() => handleClick(link.id)}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
