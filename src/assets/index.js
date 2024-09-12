@@ -38,6 +38,7 @@ import linkedin from "./company/linkedin.png";
 import twitter from "./company/twitter.png";
 import instagram from "./company/instagram.png";
 import github_logo from "./company/github.png";
+import logistics from "./company/logistics.png";
 
 import aiglass from "./aiglass.png";
 import aiglassapp from "./aiglassapp.png";
@@ -51,6 +52,7 @@ export {
   aiglass,
   aiglassapp,
   alarmsystem,
+  logistics,
   logo,
   backend,
   creator,

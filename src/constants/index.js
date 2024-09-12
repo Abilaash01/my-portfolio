@@ -10,6 +10,7 @@ import {
     javascript,
     typescript,
     html,
+    logistics,
     clogo,
     c,
     numpy,
@@ -157,7 +158,7 @@ import {
     {
       title: "Logistics Coordinator - Co-op",
       company_name: "Wipebook Corporation",
-      icon: sfl,
+      icon: logistics,
       iconBg: "#383E56",
       date: "May 2021 - Aug 2021",
       points: [
