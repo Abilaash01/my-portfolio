@@ -56,7 +56,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Python Developer",
       icon: web,
     },
     {
@@ -64,7 +64,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Web Developer",
       icon: backend,
     },
     {
@@ -136,10 +136,11 @@ import {
       iconBg: "#E6DEDD",
       date: "Sep 2022 - Apr 2023",
       points: [
-        "Enhanced user capabilities by implementing advanced features for intricate data analytics through JavaScript, PHP, and React.",
-        "Coordinated closely with various teams to plan and execute the transition from the existing technology stack to React.",
-        "Spearheaded a project to redesign a critical forms page, employing PHP and JavaScript, enabling users to seamlessly add custom date formats.",
-        "Implemented a dynamic feature allowing the format to automatically adjust to future changes made by admins, enhancing flexibility and user customization.",
+        "Design and implement a dynamic, user-focused application using Python and libraries like PySide6 and Selenium.",
+        "Develop solutions for XML and PDF validation using Python, integrating ACORD 103 standards and leveraging OpenCV for image processing.",
+        "Develop and maintain custom plugin managers using WiX Toolset, to enhance application scalability and maintainability.",
+        "Contribute to several improvements in the CI/CD pipelines, employing GitHub Actions to optimize testing, deployment, and release workflows.",
+        "Innovate with PySide6 tools to design and implement dynamic docks and modular widgets that display actionable data and configuration managers, enhancing client workflow efficiency and enabling a more intuitive user experience.",
       ],
     },
     {
