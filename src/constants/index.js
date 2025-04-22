@@ -30,6 +30,7 @@ import {
     starbucks,
     tesla,
     distiller,
+    emtech,
     sfl,
     shopify,
     carrent,
@@ -130,17 +131,30 @@ import {
   
   const experiences = [
     {
+      title: "Junior Software Developer - Full-Time",
+      company_name: "Emtech Group Inc.",
+      icon: emtech,
+      iconBg: "#E6DEDD",
+      date: "Sep 2022 - Apr 2023",
+      points: [
+        "Contribute to the development of a cross-platform desktop application for automating website functionality testing, using Python, Selenium, and PySide6 (Qt for Python).",
+        "Create advanced PDF and XML validation tools using OpenCV, lxml, and ACORD 103 compliance standards, enabling clients to verify data integrity in downloaded documents.",
+        "Develop custom plugin managers and write Python-based automation scripts to bundle core applications and optional components into MSI installers using the WiX Toolset.",
+        "Improve CI/CD infrastructure by implementing automated pipelines in GitHub Actions, optimizing testing, packaging, and release workflows to reduce deployment time.",
+        "Build dynamic, modular UI components such as dockable widgets, configuration panels, and result viewers using PySide6.",
+      ],
+    },
+    {
       title: "Full Stack Developer - Co-op",
       company_name: "DistillerSR",
       icon: distiller,
       iconBg: "#E6DEDD",
       date: "Sep 2022 - Apr 2023",
       points: [
-        "Design and implement a dynamic, user-focused application using Python and libraries like PySide6 and Selenium.",
-        "Develop solutions for XML and PDF validation using Python, integrating ACORD 103 standards and leveraging OpenCV for image processing.",
-        "Develop and maintain custom plugin managers using WiX Toolset, to enhance application scalability and maintainability.",
-        "Contribute to several improvements in the CI/CD pipelines, employing GitHub Actions to optimize testing, deployment, and release workflows.",
-        "Innovate with PySide6 tools to design and implement dynamic docks and modular widgets, enhancing client workflow efficiency and providing a more intuitive UI.",
+        "Developed and enhanced data analytics features using JavaScript and React, improving the efficiency and usability of tools that assist researchers in managing large-scale literature reviews.",
+        "Designed and implemented automated testing frameworks with Cypress and Selenium, reducing manual QA efforts by 50% and increasing the reliability of software releases.",
+        "Integrated PHPUnit test cases to ensure backend code quality, achieving high test coverage and minimizing the risk of regressions in critical workflows.",
+        "Utilized Postman to design and execute API tests during backend development, ensuring the reliability and performance of API endpoints and contributing to the stability of the overall system.",
       ],
     },
     {

@@ -33,6 +33,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import distiller from "./company/distiller.png";
+import emtech from "./company/emtech.png";
 import sfl from "./company/sfl.png";
 import linkedin from "./company/linkedin.png";
 import twitter from "./company/twitter.png";
@@ -87,6 +88,7 @@ export {
   starbucks,
   tesla,
   distiller,
+  emtech,
   sfl,
   carrent,
   jobit,
