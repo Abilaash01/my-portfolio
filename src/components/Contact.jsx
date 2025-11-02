@@ -141,14 +141,14 @@ const Contact = () => {
               <img src={linkedin} className="w-8 h-8" alt="linkedin logo" />
             </a>
             <a
-              href="https://x.com/flowspec_"
+              href="https://x.com/Abi__0001"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={twitter} className="w-8 h-8" alt="twitter logo" />
             </a>
             <a
-              href="https://www.instagram.com/abilaash_01/"
+              href="https://www.instagram.com/abilaash._/"
               target="_blank"
               rel="noopener noreferrer"
             >
