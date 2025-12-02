@@ -4,6 +4,8 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import weblink from "./weblink.png";
+import oskernel from "./oskernel.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -44,9 +46,6 @@ import logistics from "./company/logistics.png";
 import aiglass from "./aiglass.png";
 import aiglassapp from "./aiglassapp.png";
 import alarmsystem from "./alarmsystem.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import fitlife from "./fitlife.png";
 
 export {
@@ -90,11 +89,10 @@ export {
   distiller,
   emtech,
   sfl,
-  carrent,
-  jobit,
-  tripguide,
   linkedin,
   twitter,
+  weblink,
+  oskernel,
   instagram,
   github_logo,
 };

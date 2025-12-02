@@ -46,13 +46,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         
-        With a versatile background in Python, JavaScript, and C++, I have a
-        unique blend of skills that enable me to tackle a wide range of projects. I have
-        experience building and maintaining web applications, as well as working with
-        embedded systems to engineer real-time systems. Additionally, I am proficient in
-        using machine learning and AI libraries to build projects that are both efficient
-        and scalable. I am a quick learner and enjoy collaborating with fellow developers
-        to bring innovative ideas to life.
+        I’m a computer engineer with a strong foundation in embedded systems, 
+        hardware–software integration, and low-level development. I build efficient, 
+        reliable solutions across microcontrollers, real-time environments, and 
+        full-stack software applications. My experience ranges from designing AI-driven 
+        automation tools to engineering system-level software that improves performance 
+        and workflow efficiency. I enjoy bridging the gap between hardware and application 
+        development to create smarter, high-impact technologies.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

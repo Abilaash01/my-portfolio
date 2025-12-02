@@ -148,7 +148,7 @@ const Contact = () => {
               <img src={twitter} className="w-8 h-8" alt="twitter logo" />
             </a>
             <a
-              href="https://www.instagram.com/abilaash._/"
+              href="https://www.instagram.com/abilaash001/"
               target="_blank"
               rel="noopener noreferrer"
             >
