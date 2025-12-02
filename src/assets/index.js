@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import weblink from "./weblink.png";
 import oskernel from "./oskernel.png";
+import raspberry_pi_logo from "./raspberry_pi_logo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -94,5 +95,6 @@ export {
   weblink,
   oskernel,
   instagram,
+  raspberry_pi_logo,
   github_logo,
 };

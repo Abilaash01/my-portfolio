@@ -14,7 +14,6 @@ import {
     pandas,
     rust,
     tf,
-    nodejs,
     mongodb,
     git,
     docker,
@@ -24,6 +23,7 @@ import {
     threejs,
     oskernel,
     python,
+    raspberry_pi_logo,
   } from "../assets";
   
   export const navLinks = [
@@ -94,8 +94,8 @@ import {
       icon: numpy,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "raspberry pi",
+      icon: raspberry_pi_logo,
     },
     {
       name: "MongoDB",
@@ -123,7 +123,7 @@ import {
       iconBg: "#E6DEDD",
       date: "Sep 2022 - Apr 2023",
       points: [
-        "Develop and maintain cross-platform desktop applications to automate business workflows.",
+        "Develop and maintain cross-platform desktop applications to automate web testing.",
         "Design and implement tools for data validation and quality assurance to ensure accuracy and compliance.",
         "Build and manage modular components and plugin systems to enhance application functionality.",
         "Optimize and maintain build, testing, and deployment pipelines to improve release efficiency.",
@@ -137,7 +137,7 @@ import {
       iconBg: "#E6DEDD",
       date: "Sep 2022 - Apr 2023",
       points: [
-        "Utilized Postman to design and execute API tests during backend development, ensuring the reliability and performance of API endpoints and contributing to the stability of the overall system.",
+        "Develop and enhance data analytics and user-facing features to support large-scale research workflows.",
         "Design and maintain automated testing frameworks to improve software quality and reduce manual QA efforts.",
         "Ensure backend code reliability and maintainability through thorough testing and quality assurance practices.",
         "Test and validate APIs to guarantee performance, stability, and seamless integration across systems.",
